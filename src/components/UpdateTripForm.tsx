@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { FieldValues, useForm } from 'react-hook-form'
-import { useParams, useNavigate, } from 'react-router-dom'
+import { useParams, useNavigate, Link} from 'react-router-dom'
+
+
 export default function UpdateTripForm() {
 
   const { id } = useParams()
@@ -34,6 +36,7 @@ export default function UpdateTripForm() {
     <form onSubmit={handleSubmit((data) => updateFetch(data)
     )}>
       <h2>Update Trip</h2>
+      <Link to={'/trips'}><button>All-trips</button></Link>
       <label htmlFor="name">Name</label>
       <input type="text" {...register('name')} />
       <label htmlFor="destination">Destination</label>
