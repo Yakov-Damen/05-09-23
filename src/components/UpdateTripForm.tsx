@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { FieldValues, useForm } from 'react-hook-form'
-import { useParams, useNavigate, Link} from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 
 
 export default function UpdateTripForm() {

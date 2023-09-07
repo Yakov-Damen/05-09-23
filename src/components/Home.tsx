@@ -1,5 +1,3 @@
-import {useContext} from 'react'
-import Trips from './Trips'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
